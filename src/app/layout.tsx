@@ -24,8 +24,8 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js App",
-  description: "Configured with Outfit, Merriweather, and Fira Code",
+  title: "Repair Intake",
+  description: "Repair shop intake and outlet management",
 };
 
 export default function RootLayout({

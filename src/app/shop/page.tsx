@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignOutButton } from "@/components/auth/sign-out-button";
 import {
   Card,
   CardContent,
@@ -19,12 +20,15 @@ export default function ShopPage() {
           <p className="text-sm text-muted-foreground">
             Business administration features will be available here.
           </p>
-          <Link
-            className="mt-4 inline-block text-sm font-medium text-primary hover:underline"
-            href="/"
-          >
-            Back to homepage
-          </Link>
+          <div className="mt-4 flex items-center gap-3">
+            <Link
+              className="text-sm font-medium text-primary hover:underline"
+              href="/"
+            >
+              Back to homepage
+            </Link>
+            <SignOutButton />
+          </div>
         </CardContent>
       </Card>
     </main>

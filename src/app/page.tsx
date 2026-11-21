@@ -46,6 +46,20 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-3 sm:grid-cols-2">
+          <div className="col-span-full mb-1 flex justify-end gap-3">
+            <Link
+              className="text-sm font-medium text-muted-foreground hover:text-foreground hover:underline"
+              href="/login"
+            >
+              Sign in
+            </Link>
+            <Link
+              className="text-sm font-medium text-primary hover:underline"
+              href="/register"
+            >
+              Create account
+            </Link>
+          </div>
           {destinations.map((destination) => (
             <Link
               key={destination.href}
